@@ -1,0 +1,312 @@
+*{ /*Звертаємося до вього тексту*/
+    padding: 0; /* Встановлюємо відступи всередині елементів на 0 */
+    margin: 0; /* Встановлюємо зовнішні відступи на 0 */
+    border: 0; /* Видаляємо рамки у всіх елементів */
+}
+
+*,*:before,*:after{
+    -moz-box-sizing: border-box;/* Для Firefox */
+    -webkit-box-sizing: border-box; /* Для Chrome, Safari */
+    box-sizing: border-box; /* Для всіх інших браузерів */
+}
+
+:focus,:active{outline: none;} /* Прибирає обведення при натисканні або фокусі */
+a:focus,a:active{outline: none;} /* Те саме для посилань */
+
+nav,footer,header,aside{display: block;} /* Робимо ці елементи блочними (HTML5 підтримка для старих браузерів) */
+
+html,body{
+    height: 100%; /* Висота на весь екран */
+    width: 100%; /* Ширина на весь екран */
+    font-size: 100%; /* Розмір шрифту по замовчуванню */
+    line-height: 1; /* Висота рядка без додаткових відступів */
+    font-size: 14px; /* Основний розмір шрифту */
+    -ms-text-size-adjust: 100%; /* Вимикає автоматичне масштабування шрифту в IE */
+    -moz-text-size-adjust: 100%;  /* Вимикає автоматичне масштабування шрифту в Firefox */
+    -webkit-text-size-adjust: 100%; /* Вимикає автоматичне масштабування шрифту в Chrome та Safari */
+}
+
+
+input,button,textarea{font-family:inherit;} /* Спадкування шрифтів від батьківського елемента (всі елементи мають однаковий шрифт */
+
+input::-ms-clear{display: none} /* Прибирає хрестик очищення у поле введення в Internet Explorer */
+button{cursor: pointer;} /* Змінює курсор на вказівник при наведенні на кнопку */
+button::-moz-focus-inner{padding: 0; border: 0;} /* Прибирає відступи та рамки для кнопок у Firefox */
+a, a:visited{text-decoration: none;} /* Прибирає підкреслення для посилань */
+a:hover{text-decoration: none;} /* Прибирає підкреслення при наведенні */
+ul li{list-style: none;} /* Прибирає маркери списку */
+img{vertical-align: top;} /* Забирає зайвий відступ під зображенням */
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;} /*Однакові шрифти для заголовків */
+
+body{
+    max-width: 1440px;
+    min-width: 668px;
+    max-height: auto;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} 
+.toppanel{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 29px auto 0px;
+    max-width: 1440px;
+    min-width: 41vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+    
+}
+
+.right_navi{
+    margin-right: 80px;
+}
+
+.text li{
+    display: inline;
+    margin: 10px;
+
+}
+
+
+.text a{
+    color: #3F3B3D;
+}
+
+
+.button{
+    background-color:#DDDBDA;
+    height: 42px;
+    width: 114px;
+    border-radius: 3px;
+}
+
+.photo{
+    margin-left: 8vw;
+}
+
+.bigblock{
+    display: block;
+    max-width: auto;
+    max-height: auto;
+    margin: 2vw 5vw;
+    position: relative;
+
+}
+
+
+.block{
+    display: flex;
+    position: relative;
+    justify-content: end;
+    max-width: 100%;
+}
+
+.conteinerphoto{
+    
+    display: flex;
+    position: relative;
+    max-width: 70%;
+
+}
+
+.blockphoto{
+    display: flex;
+    position: relative;
+    justify-content: end;
+  
+
+}
+
+.photo2 img{
+    max-width: 75vw;
+    max-height: 100%;
+}
+
+.sguares{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: end;
+    transform: translate(0, -2%);
+
+
+}
+
+
+
+.sguar_1,.sguar_2,.sguar_3{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 6px;
+    height: 6px;
+    background-color: #FFFFFF66;
+}
+
+.sguar_1{
+    background-color: #FFFFFF;
+}
+
+.grey{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background-color: #3F3B3D;
+    height: 80%;
+    width: 100%;
+
+}
+
+.textleft{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    max-width: 26vw;
+    justify-content: left;
+    align-items: end;
+    transform: translate(0, -15%);
+}
+
+.blocktextlef{
+    margin: 2px;
+}
+
+.text1{
+    color: #FFFFFF;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.5vw;
+    font-weight: 400;
+    max-width: 370px;
+}
+
+.buttons{
+    flex-wrap: wrap;
+}
+
+.button2,.button3{
+    margin-top: 28px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 400;
+    width: 178px;
+    height: 45px;
+}
+
+.button2{
+    background-color: #F14814;
+    border-radius: 3px;
+    
+
+}
+
+.button3{
+    background-color: transparent;
+}
+
+
+
+.bignapisu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto;
+    
+}
+
+.smallnapis{
+    display: contents;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.napisu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 700px;
+    max-height: 112px;
+    font-weight: 400;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.napis_1{
+    display: flex;
+    color: #F14814;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+
+.napis_2{
+    display: flex;
+    color: #030303;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 24px;
+
+}
+.kartinkulist{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 59px auto;
+    max-width: 850px;
+    min-width: 500px;
+
+    
+}
+
+.kartinkulist li{
+    width: 245.328125px;
+    height: 150px;
+    margin-right: 32px;
+}
+
+.k_1,.k_2,.k_3{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.t_1,.t_2,.t_3{
+    
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-size: 21px;
+    font-weight: 400;
+    max-width: 245.328125px;
+    max-height: 25px;
+    text-align:center;
+    margin-top: 13px;
+
+}
+
+.t_1_1,.t_2_2,.t_3_3{
+    
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 400;
+    max-width: 245.328125px;
+    max-height: 16px;
+    white-space: normal;
+    text-align: center;
+    margin-top: 11px;
+}
+
+.text{}
+
+
+
+
+
+
